@@ -1,25 +1,39 @@
 package timo
 
+import java.util.*
+
 fun main(args: Array<String>) {
 
+    var str: String? = p()
+
+    str = null;
     println("hi")
+    val pe = Pe("koko")
 
-    Pe().hell();
+    pe.hell()
 
-    var p = Pe();
-    p.hell();
+    val scanner = Scanner(System.`in`)
 
-    var u:Int=9;
+    var name = scanner.next()
 
-    print(u.toString())
-
+    var score = scanner.nextInt()
+    println(name + "  " + score)
 }
 
-class Pe{
+fun p(): String? {
+    var str: String? = "saaass"
 
-    fun hell(){
+    println(str?.get(3))
+    return str
+}
 
-        println("hello from the other side")
+
+
+
+class Pe(var name: String) {
+
+    fun hell() {
+        println(name)
     }
 
 }

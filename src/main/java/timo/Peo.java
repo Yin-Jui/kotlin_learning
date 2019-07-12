@@ -7,4 +7,9 @@ public class Peo
         System.out.println("jjjjj");
 
     }
+
+    public Peo(){
+
+
+    }
 }
