@@ -9,6 +9,10 @@ fun main(args: Array<String>) {
     var p = Pe();
     p.hell();
 
+    var u:Int=9;
+
+    print(u.toString())
+
 }
 
 class Pe{
